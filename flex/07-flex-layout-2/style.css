@@ -27,3 +27,45 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 15px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+}
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
