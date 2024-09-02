@@ -89,3 +89,35 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+.container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr 4fr 1fr;
+  grid-template-areas: 
+    'header header'
+    'sidebar nav'
+    'sidebar article'
+    'footer footer';
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
+}
